@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+	<h1>Cute Phương Viên</h1>
+	 <h2 th:utext="${message}">..!..</h2>
+	  <a th:href="@{/personList}">Person List</a>  
+	  <a th:href="@{/getAll}">User List</a>  
+</body>
+</html>

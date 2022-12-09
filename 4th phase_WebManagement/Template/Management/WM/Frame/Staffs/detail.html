@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from bootstrap.gallery/bluemoon-v6/main_files/dashboards/dashboard-daily-sales.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Aug 2020 13:28:48 GMT -->
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Meta -->
+	<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+	<meta name="author" content="ParkerThemes">
+	<link rel="shortcut icon" href="../../Decoration/img/mikrokosmos.png" />
+
+	<!-- Title -->
+	<title>Mikrokosmos Management</title>
+
+	<!-- *************
+			************ Common Css Files *************
+		************ -->
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="../../Decoration/css/bootstrap.min.css">
+	<!-- Icomoon Font Icons css -->
+	<link rel="stylesheet" href="../../Decoration/fonts/style.css">
+	<!-- Main css -->
+	<link rel="stylesheet" href="../../Decoration/css/main.css">
+
+	<!-- *************
+			************ Vendor Css Files *************
+		************ -->
+	<!-- DateRange css -->
+	<link rel="stylesheet" href="../../Decoration/vendor/daterange/daterange.css" />
+
+</head>
+
+<body>
+
+	<!-- Loading starts -->
+	<div id="loading-wrapper">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+	<!-- Loading ends -->
+
+	<!-- *************
+			************ Header section start *************
+		************* -->
+
+	<!-- Header start -->
+	<header class="header">
+		<div class="logo-wrapper">
+			<a href="../../../index.html" class="logo">
+				<span style="color: #2091d9; font-size: 24px; font-weight: bolder;">MIKRO</span>
+				<span style="color: #fff; font-size: 24px; font-weight: bolder;">KOSMOS</span>
+			</a>
+		</div>
+		<div class="header-items">
+			<!-- Custom search start -->
+			<div class="custom-search">
+				<input type="text" class="search-query" placeholder="Search here ...">
+				<i class="icon-search1"></i>
+			</div>
+			<!-- Custom search end -->
+
+			<!-- Header actions start -->
+			<ul class="header-actions">
+				<li class="dropdown">
+					<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+						<i class="icon-bell"></i>
+						<span class="count-label">8</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
+						<div class="dropdown-menu-header">
+							Notifications (40)
+						</div>
+						<ul class="header-notifications">
+							<li>
+								<a href="#">
+									<div class="user-img away">
+										<img src="../../Decoration/img/1.jpg" alt="User" />
+									</div>
+									<div class="details">
+										<div class="user-title">Abbott</div>
+										<div class="noti-details">Membership has been ended.</div>
+										<div class="noti-date">Oct 20, 07:30 pm</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="user-img busy">
+										<img src="../../Decoration/img/2.jpg" alt="User" />
+									</div>
+									<div class="details">
+										<div class="user-title">Braxten</div>
+										<div class="noti-details">Approved new design.</div>
+										<div class="noti-date">Oct 10, 12:00 am</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="user-img online">
+										<img src="../../Decoration/img/3.jpg" alt="User" />
+									</div>
+									<div class="details">
+										<div class="user-title">Larkyn</div>
+										<div class="noti-details">Check out every table in detail.</div>
+										<div class="noti-date">Oct 15, 04:00 pm</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+						<span class="user-name">AitchTee</span>
+						<span class="avatar">ZF<span class="status busy"></span></span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
+						<div class="header-profile-actions">
+							<div class="header-user-profile">
+								<div class="header-user">
+									<img src="../../Decoration/img/aitchtee.jpg" alt="Admin Template" />
+								</div>
+								<h5>AitchTee</h5>
+								<p>Admin</p>
+							</div>
+							<a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
+							<a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
+							<a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- Header actions end -->
+		</div>
+	</header>
+	<!-- Header end -->
+
+	<!-- Screen overlay start -->
+	<div class="screen-overlay"></div>
+	<!-- Screen overlay end -->
+
+
+	<!-- *************
+			************ Header section end *************
+		************* -->
+
+	<!-- Container fluid start -->
+	<div class="container-fluid">
+
+		<!-- Navigation start -->
+		<nav class="navbar navbar-expand-lg custom-navbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bluemoonNavbar"
+				aria-controls="bluemoonNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="bluemoonNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link active-page" href="../../../index.html">
+							<i class="icon-devices_other nav-icon"></i>
+							Dashboards
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-package nav-icon"></i>
+							Products
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="appsDropdown">
+							<li>
+								<a class="dropdown-item" href="../Authors/table.html">Authors</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../Categories/table.html">Categories</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../Books/table.html">Books</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../HistoryPrices/table.html">History Prices</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-book-open nav-icon"></i>
+							Storage
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+							<li>
+								<a class="dropdown-item" href="../Suppliers/table.html">Suppliers</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../Receipts/table.html">Receipts</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="formsDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-edit1 nav-icon"></i>
+							Sale
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="formsDropdown">
+							<li>
+								<a class="dropdown-item" href="../Customers/table.html">Customers</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../Invoices/table.html">Invoices</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../HistoryPoints/table.html">History Point</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../ShipInfors/table.html">Ship Informations</a>
+							</li>
+						</ul>
+                    </li>
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="graphsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-pie-chart1 nav-icon"></i>
+							Personel
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="graphsDropdown">
+							<li>
+								<a class="dropdown-item" href="../Departs/table.html">Departs</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./table.html">Staffs</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="uiElementsDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-image nav-icon"></i>
+							Convention
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="uiElementsDropdown">
+							<li>
+								<a class="dropdown-item" href="../Levels/table.html">Levels</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../Methods/table.html">Methods</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="tablesDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="icon-border_all nav-icon"></i>
+							Administration
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="tablesDropdown">
+							<li>
+								<a class="dropdown-item" href="../Logs/table.html">Logs</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../RecycleBin/table.html">Recycle Bin</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Navigation end -->
+
+		<!-- *************
+				************ Main container start *************
+			************* -->
+			<div class="main-container">
+
+				<!-- Page header start -->
+				<div class="page-header">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">Personel</li>
+						<li class="breadcrumb-item active">Staffs</li>
+					</ol>
+				</div>
+				<!-- Page header end -->
+			
+				<!-- Content wrapper start -->
+				<div class="content-wrapper">
+			
+					<!-- Fixed body scroll start -->
+					<div class="fixedBodyScroll">
+			
+						<!-- Row start -->
+						<h3 class="text-center">Staff ID</h3>
+						<div class="row gutters">
+							<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+								<div class="card">
+                                    <div class="card-header">
+										<div class="card-title">Profile image</div>
+									</div>
+									<div class="card-body">
+										<div class="student-profile">
+											<div class="student-thumb">
+												<img src="../../Decoration/img/staff/5.jpg" alt="Staff">
+											</div>
+											<div class="input-group mb-3">
+												<div class="custom-file">
+													<input type="file" class="custom-file-input" id="changeProfile" aria-describedby="inputGroupFileAddon01">
+													<label class="custom-file-label" for="changeProfile">Choose file</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-5 col-lg-5 col-md-8 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Personal Details</div>
+									</div>
+									<div class="card-body">
+										<div class="row gutters">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+													<label for="lastName">Fullname</label>
+													<input type="text" class="form-control" placeholder="Enter fullname">
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+													<label for="education">Birthday</label>
+													<input type="text" class="form-control" placeholder="Date of birth">
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+													<label for="education">Phone</label>
+													<input type="text" class="form-control" placeholder="Phone number">
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+													<label for="addreSs">Email</label>
+													<input type="text" class="form-control" placeholder="Email">
+												</div>
+                                            </div>
+                                            
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="form-group">
+													<label for="addreSs">Address</label>
+													<input type="text" class="form-control" id="addreSs" placeholder="Current Address">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Account</div>
+									</div>
+									<div class="card-body">
+										<div class="row gutters">
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="form-group">
+													<label for="userName">Username</label>
+													<input type="text" class="form-control" id="userName" placeholder="Enter username">
+												</div>
+											</div>
+											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												<div class="form-group">
+													<label for="password">Password</label>
+													<input type="password" class="form-control" id="password" placeholder="Enter password">
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+                                                    <label for="inputEmail">Depart</label>
+                                                    <select class="form-control">
+                                                        <option value="">Storage</option>
+                                                        <option value="">Sale</option>
+                                                        <option value="">Adminstration</option>
+                                                    </select>
+                                                    </div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+												<div class="form-group">
+													<label for="inputWeb">Position</label>
+													<select class="form-control">
+                                                        <option value="">Manager</option>
+                                                        <option value="">Employee</option>
+                                                    </select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-100"></div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="text-right">
+									<button class="btn btn-outline-success btn-rounded">Save</button>
+								</div>
+							</div>
+						</div>
+						<!-- Row end -->
+			
+					</div>
+					<!-- Fixed body scroll end -->
+					
+				</div>
+				<!-- Content wrapper end -->
+			
+			</div>
+		<!-- *************
+				************ Main container end *************
+			************* -->
+
+		<!-- Footer start -->
+		<footer class="main-footer">© Mikrokosmos 2018 - 2020</footer>
+		<!-- Footer end -->
+
+	</div>
+	<!-- Container fluid end -->
+
+	<!-- *************
+			************ Required JavaScript Files *************
+		************* -->
+	<!-- Required jQuery first, then Bootstrap Bundle JS -->
+	<script src="../../Decoration/js/jquery.min.js"></script>
+	<script src="../../Decoration/js/bootstrap.bundle.min.js"></script>
+	<script src="../../Decoration/js/moment.js"></script>
+
+	<!-- *************
+			************ Vendor Js Files *************
+		************* -->
+	<!-- Slimscroll JS -->
+	<script src="../../Decoration/vendor/slimscroll/slimscroll.min.js"></script>
+	<script src="../../Decoration/vendor/slimscroll/custom-scrollbar.js"></script>
+
+	<!-- Daterange -->
+	<script src="../../Decoration/vendor/daterange/daterange.js"></script>
+	<script src="../../Decoration/vendor/daterange/custom-daterange.js"></script>
+
+	<!-- Apex Charts -->
+	<script src="../../Decoration/vendor/apex/apexcharts.min.js"></script>
+	<script src="../../Decoration/vendor/apex/daily-sales/donut-emails.js"></script>
+	<script src="../../Decoration/vendor/apex/daily-sales/area-orders.js"></script>
+	<script src="../../Decoration/vendor/apex/daily-sales/column-deals.js"></script>
+	<script src="../../Decoration/vendor/apex/daily-sales/scatter-visitors.js"></script>
+	<script src="../../Decoration/vendor/apex/daily-sales/bar-sales.js"></script>
+
+	<!-- JVector Maps JS -->
+	<script src="../../Decoration/vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+	<script src="../../Decoration/vendor/jvectormap/world-mill-en.js"></script>
+	<script src="../../Decoration/vendor/jvectormap/gdp-data.js"></script>
+	<script src="../../Decoration/vendor/jvectormap/custom/world-map-markers.js"></script>
+
+	<!-- Main Js Required -->
+	<script src="../../Decoration/js/main.js"></script>
+
+</body>
+
+<!-- Mirrored from bootstrap.gallery/bluemoon-v6/main_files/dashboards/dashboard-daily-sales.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Aug 2020 13:29:06 GMT -->
+
+</html>

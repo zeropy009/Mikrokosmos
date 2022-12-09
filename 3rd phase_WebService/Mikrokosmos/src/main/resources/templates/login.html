@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="context-path" th:content="@{/}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
+        <link rel="icon" type="image/png" th:href="@{/img/Mikrokosmos.png}"/>
+        <title>Login</title>
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{fonts/font-awesome-4.7.0/css/font-awesome.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{css/util.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{css/mainLogin.css}"/>
+    </head>
+    <body>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form" th:action="@{/login}" method="post">
+                        <span class="login100-form-title p-b-26">
+                            Welcome
+                        </span>
+                        <span class="login100-form-title p-b-48">
+                            <img class="logo" th:src="@{/img/Mikrokosmos.png}" alt=""/>
+                        </span>
+                        <div th:if="${param.logout}" class="error-login">
+                            You have been logged out.
+                        </div>
+                        <div th:if="${param.error}" class="error-login">
+                            Invalid username or password.
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Please enter username">
+                            <input class="input100" type="text" name="username"/>
+                            <span class="focus-input100" data-placeholder="Username"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Enter password">
+                            <span class="btn-show-pass">
+                                <i class="zmdi zmdi-eye"></i>
+                            </span>
+                            <input class="input100" type="password" name="password"/>
+                            <span class="focus-input100" data-placeholder="Password"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" type="submit">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--        <div class="container">
+                    <div class="row">
+                        <form th:action="@{/login}" method="post">
+                            <div><label> User Name : <input type="text" name="username"/> </label></div>
+                            <div><label> Password: <input type="password" name="password"/> </label></div>
+                            <div><input type="submit" value="Sign In"/></div>
+                            <h3>Login with:</h3>
+                                                <p th:each="url : ${urls}">
+                                                    <a th:text="${url.key}" th:href="${url.value}">Client</a>
+                                                </p>
+                        </form>
+                    </div>
+                </div>-->
+
+        <script th:src="@{/vendor/jquery/jquery-3.2.1.min.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/vendor/animsition/js/animsition.min.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/vendor/bootstrap/js/popper.js}"></script>
+        <script th:src="@{/vendor/bootstrap/js/bootstrap.min.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/vendor/select2/select2.min.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/vendor/daterangepicker/moment.min.js}"></script>
+        <script th:src="@{/vendor/daterangepicker/daterangepicker.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/vendor/countdowntime/countdowntime.js}"></script>
+        <!--===============================================================================================-->
+        <script th:src="@{/js/mainLogin.js}"></script>
+    </body>
+</html>

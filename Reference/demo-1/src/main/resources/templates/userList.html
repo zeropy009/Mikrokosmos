@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="myapp">
+<head>
+	<meta charset="UTF-8" />
+	<title>Person List</title>
+	<link    th:href="@{/css/style.css}" rel="stylesheet"/>
+	<!-- Bootstrap-->
+	<link    th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+	
+	<!-- Jquery-->
+	<script th:inline="javascript" src="js/jquery.min.js"></script>
+	<script th:inline="javascript" src="js/bootstrap.min.js"></script>
+	
+	<!-- Angular-->
+	<script th:inline="javascript" src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="myctrl">
+		<h1 th:text="${session.role}"></h1>
+		<h1 th:text="${session.roles}"></h1>
+		<h1 ng-show="check">abc show</h1>
+		<h1 ng-hide="check">abc hide</h1>
+	</div>
+	<h1>Person List</h1>
+	
+	<a class="btn btn-danger" href="addUser">Add Person</a>
+
+	<br />
+	<br />
+	<div>
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>Pass</th>
+				<th th:text="${session.roles}"></th>
+			</tr>
+			<tr th:each="user : ${users}">
+				<td th:utext="${user.getId()}">...</td>
+				<td th:utext="${user.getPass()}">...</td>
+				<td>
+					<form th:action="@{/deleteUser}" th:object="${user}">
+						ID: <input type="text" name="id" th:value="${user.getId()}" /> <br />
+						Pass: <input type="text" name="pass" th:value="${user.getPass()}" /> <br />
+						<input type="submit" value="Delete" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script th:inline="javascript">
+		var check = [[${session.role}]];
+		alert(check+" abc");
+	      /*<![CDATA[*/
+	      
+	      var app = angular.module("myapp", []).controller("myctrl", function ($scope) {
+	      		$scope.check=[[${session.role}]];
+	      		alert($scope.check);
+	      	});
+	  		/*]]>*/
+      	
+      </script>
+</body>
+</html>
